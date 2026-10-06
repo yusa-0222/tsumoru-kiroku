@@ -1,0 +1,65 @@
+:root {
+  --bg: #f6f5fa;
+  --card: #ffffff;
+  --text: #1c1b22;
+  --sub: #5e5b6b;
+  --line: #e3e1ea;
+  --accent: #6a4fd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121118;
+    --card: #1d1b25;
+    --text: #efedf5;
+    --sub: #aaa6b8;
+    --line: #2f2c3a;
+    --accent: #a995ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+header { margin-bottom: 24px; }
+header a.home { color: var(--sub); text-decoration: none; font-size: 0.9rem; }
+h1 { font-size: 1.7rem; line-height: 1.4; margin: 8px 0 4px; }
+h2 { font-size: 1.15rem; margin: 0 0 8px; }
+.meta { color: var(--sub); font-size: 0.9rem; margin: 0; }
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+}
+p { margin: 0 0 8px; }
+p:last-child { margin-bottom: 0; }
+ul { margin: 0; padding-left: 1.3em; }
+li { margin: 4px 0; }
+.note { color: var(--sub); font-size: 0.92rem; }
+a { color: var(--accent); }
+dt { font-weight: 700; margin-top: 12px; }
+dt:first-child { margin-top: 0; }
+dd { margin: 4px 0 0; }
+.links { list-style: none; padding: 0; }
+.links li { margin: 8px 0; }
+.links a {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer { color: var(--sub); font-size: 0.85rem; margin-top: 32px; text-align: center; }
